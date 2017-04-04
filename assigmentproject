@@ -1,0 +1,22 @@
+import javax.swing.JOptionPane;
+public class calculation {
+    
+    
+static final double KDV  = 0.18;
+   
+    public static void main(String[] args) {
+        int price, ürün;
+        String ürünStr;
+        
+        ürünStr = JOptionPane.showInputDialog("Please Enter ürün fiyatı? :");
+        
+        ürün = Integer.parseInt(ürünStr); // this does the conversion
+       
+        price=(int) (ürün*KDV);
+        
+        JOptionPane.showMessageDialog(null,+ price + "ytl");
+        
+     
+    }
+    
+}
