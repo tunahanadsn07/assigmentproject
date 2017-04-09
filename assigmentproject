@@ -3,7 +3,7 @@ public class calculation {
     
     
 static final double KDV  = 0.18;
-   
+   static final double ÖTV  = 0.16;
     public static void main(String[] args) {
         int price, ürün;
         String ürünStr;
@@ -12,7 +12,7 @@ static final double KDV  = 0.18;
         
         ürün = Integer.parseInt(ürünStr); // this does the conversion
        
-        price=(int) (ürün*KDV);
+        price=(int) (ürün*KDV*ÖTV);
         
         JOptionPane.showMessageDialog(null,+ price + "ytl");
         
